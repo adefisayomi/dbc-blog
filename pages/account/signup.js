@@ -1,8 +1,12 @@
 import {Divider, Form, Button, Header, Image} from 'semantic-ui-react'
 import styles from '../../styles/account.module.css'
 import BlogList from '../../src/layout/BlogList'
+import {useState} from 'react'
 
 const Signup = () => {
+
+    const [showPass, setShowPass] = useState(false)
+    const toggleShowPass = () => showPass ? setShowPass(false) : setShowPass(true)
 
     return(
         <div className= {styles.signup}>
@@ -25,7 +29,8 @@ const Signup = () => {
                     />
                     <Form.Input 
                         placeholder= 'Password'
-                        icon= {{link: true, name: 'eye'}}
+                        type= {showPass ? 'text' : 'password'}
+                        icon= {{link: true, name: showPass ? 'eye' : 'eye slash', onClick: toggleShowPass}}
                     />
                     <Button 
                         content= 'Login'

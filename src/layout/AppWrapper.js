@@ -28,7 +28,7 @@ const AppWrapper = ({children, nav}) => {
     return <>
     <Header />
     <section className= {styles.appwrapper}>
-        { showNav && <aside> <Nav /> </aside> }
+        {/* { showNav && <aside> <Nav /> </aside> } */}
         <main> {children} </main>
     </section>
     </>

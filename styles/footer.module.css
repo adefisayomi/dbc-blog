@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    align-items: center;
+}
+.footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 13px 20px;
+}
+.footer ul li {
+    list-style: none;
+    font-family: 'Roboto';
+    padding: 0 8px;
+    font-weight: 400;
+    font-size: 13px;
+}
+.footer ul li a{
+    color: rgb(105, 105, 105);
+}
+.footer ul li a:hover{
+    text-decoration: underline;
+}
