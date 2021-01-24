@@ -8,13 +8,15 @@
     height: 100%;
     max-height: 150px;
     margin-bottom: 30px;
-    border: 2px solid white;
+    border: 2px solid #2a4d69;
     border-radius: 15px;
+    color: #213d53;
 }
 .blog_list img{
 width: 130px;
 height: 130px;
 border-radius: 100%;
+border: 2px solid white;
 object-fit: cover;
 }
 .blog_list_details{
@@ -40,5 +42,12 @@ margin-left: 10px;
     padding: 0;
     padding-bottom: 2.5px;
 } 
-
+.blog_list_details p{
+    font-weight: bold;
+    font-size: 13px;
+}
+.blog_list_details a{
+    color: white;
+    font-size: 15px;
+}
 /* -------------------------------- */

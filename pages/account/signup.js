@@ -1,4 +1,4 @@
-import {Divider} from 'semantic-ui-react'
+import {Divider, Form, Button, Header, Image} from 'semantic-ui-react'
 import styles from '../../styles/account.module.css'
 import BlogList from '../../src/layout/BlogList'
 
@@ -7,17 +7,31 @@ const Signup = () => {
     return(
         <div className= {styles.signup}>
             <div className= {styles.signup_aside}>
-                <div className= {styles.signup_blog_list}>
+                <h1>latest blogs.</h1>
+                {/* <div className= {styles.signup_blog_list}>
                     <BlogList/>
                     <BlogList/>
-                </div>
-                <div className= {styles.aside_more}>
-
-                </div>
+                </div> */}
             </div>
-            <Divider vertical>OR</Divider>
+            {/* <Divider vertical segment>OR</Divider> */}
             <div className= {styles.signup_form}>
-                form
+            <Header as='h2'>
+                <Image circular src='https://react.semantic-ui.com/images/avatar/large/patrick.png' /> DBC-blog
+            </Header>
+                <Form>
+                    <Form.Input 
+                        placeholder= 'Username'
+                        icon= 'user'
+                    />
+                    <Form.Input 
+                        placeholder= 'Password'
+                        icon= {{link: true, name: 'eye'}}
+                    />
+                    <Button 
+                        content= 'Login'
+                        primary
+                    />
+                </Form>
             </div>
            
         </div>
