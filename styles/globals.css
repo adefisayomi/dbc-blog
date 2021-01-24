@@ -33,6 +33,7 @@ li{
 }
 :root{
 --bgColor: #1DA1F2;
+--border: rgb(189, 203, 211);
 /* --color: rgb(29,161,242); */
 }
 

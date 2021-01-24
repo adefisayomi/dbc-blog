@@ -105,6 +105,7 @@ border: 1px solid var(--bgColor);
 .home_main_create_icon{
     color: var(--bgColor);
     font-size: 11px;
+    padding-bottom: 15px;
 }
 
 .home aside {

@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import { Icon } from 'semantic-ui-react';
 
-const Home = () => {
+const Home = ({children}) => {
   return (
     <div className= {styles.home}>
     <section className= {styles.home_main}>
@@ -34,8 +34,8 @@ const Home = () => {
           See what’s happening in the world right now
           </h1>
           <p>Join Twitter today.</p>
-          <Link href='#'><a id= {styles.colored_btn}>Sign up</a></Link>
-          <Link href='#'><a>Log in</a></Link>
+          <Link href='/signup'><a id= {styles.colored_btn}>Sign up</a></Link>
+          <Link href='/login'><a>Log in</a></Link>
         </div>
       </main>
     </section>
@@ -43,6 +43,7 @@ const Home = () => {
         <Link href='#'><a id= {styles.colored_btn}>Sign up</a></Link>
         <Link href='#'><a>Log in</a></Link>
     </div>
+    {children}
     <footer>
       <Footer />
     </footer>
