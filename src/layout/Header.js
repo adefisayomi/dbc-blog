@@ -22,7 +22,7 @@ const Header = () => {
     return (
         <Head>
             <title>Twitter-clone | {path} </title>
-            <meta charset="utf-8" />
+            <meta charSet="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0"/>
             <meta name="theme-color" content="#000000" />
             <meta name="description" content="Web site created using create-next-app" />
